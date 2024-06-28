@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Website</title>
+    <link rel="stylesheet" href="./public/css/Home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to MovieRec</h1>
+            <p>Discover your next favorite movie!</p>
+        </section>
+
+        <section id="search">
+            <h2>Search Movies</h2>
+            <form>
+                <input type="text" placeholder="Search for a movie...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="filters">
+                <select id="genre-select" name="genre">
+                    <option value="">Select Genre</option>
+                    <!-- Add genre options here -->
+                    <option value="">Romantic</option>
+                </select>
+                <select name="year">
+                    <option value="">Select Year</option>
+                    <!-- Add year options here -->
+                </select>
+                <!-- Add more filters as needed -->
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Recommended for You</h2>
+            <div id="movie-container" class="movie-grid">
+                <!-- Movie cards will be dynamically inserted here -->
+                <div class="movie-card">
+                    <img src="movie-poster.jpg" alt="Movie Title">
+                    <h3>Movie Title</h3>
+                    <p>Release Year: 2023</p>
+                    <p>Rating: 8.5/10</p>
+                </div>
+                <!-- More movie cards -->
+            </div>
+        </section>
+
+        <section id="top-rated">
+            <h2>Top Rated Movies</h2>
+            <div class="movie-list">
+                <!-- Top rated movies will be listed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MovieRec. All rights reserved.</p>
+    </footer>
+    <script src="./public/javascript/Home.js"
+    <script src="app.js"></script>
+</body>
+</html>
